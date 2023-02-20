@@ -1,6 +1,10 @@
+#!/usr/bin/env python3
+"""This file contains the Server class"""
+
 import csv
 import math
 from typing import List, Tuple
+
 
 def index_range(page: int, page_size: int) -> tuple:
     """This functions return a tuple of size two containing a 
@@ -9,6 +13,7 @@ def index_range(page: int, page_size: int) -> tuple:
     """
     start_index = (page - 1) * page_size
     end_index = start_index + page_size
+    
     return(start_index, end_index)
 
 class Server:
